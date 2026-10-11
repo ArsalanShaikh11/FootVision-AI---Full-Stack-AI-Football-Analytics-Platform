@@ -1,0 +1,17 @@
+fastapi>=0.115.0
+uvicorn>=0.32.0
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+sqlalchemy>=2.0.30
+alembic>=1.14.0
+psycopg2-binary>=2.9.10
+python-multipart>=0.0.18
+opencv-python>=4.10.0
+ultralytics>=8.3.0
+lap>=0.5.12
+imageio-ffmpeg>=0.5.1
+pandas>=2.2.0
+numpy>=2.0.0
+scipy>=1.13.0
+httpx>=0.28.0
+pytest>=8.3.0

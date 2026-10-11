@@ -1,0 +1,188 @@
+# ============================================================
+# FootVision AI — .gitignore
+# ============================================================
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+MANIFEST
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+nosetests.xml
+pytest.xml
+
+# Type checkers / linters
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ------------------------------------------------------------
+# AI / ML artefacts
+# ------------------------------------------------------------
+# YOLO / PyTorch weights (large binary files)
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.pb
+*.mlmodel
+
+# Ultralytics run output
+runs/
+
+# ------------------------------------------------------------
+# Video & media files
+# ------------------------------------------------------------
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.wmv
+*.flv
+
+# Images (generated/processed)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# ------------------------------------------------------------
+# Databases & exports
+# ------------------------------------------------------------
+*.db
+*.sqlite3
+*.sqlite
+footvision.db
+
+# CSV exports produced by analytics pipeline
+*.csv
+
+# ------------------------------------------------------------
+# Backend storage directories
+# ------------------------------------------------------------
+# Local file-upload and processed-video storage
+storage/
+backend/storage/
+
+# Alembic migration bytecache
+backend/alembic/__pycache__/
+
+# ------------------------------------------------------------
+# Environment & secrets
+# ------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# Keep the example template committed
+!.env.example
+
+# ------------------------------------------------------------
+# Next.js / Node.js
+# ------------------------------------------------------------
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+*.tsbuildinfo
+.turbo/
+
+# Next.js telemetry opt-out marker
+.vercel
+
+# ------------------------------------------------------------
+# Docker
+# ------------------------------------------------------------
+# Don't ignore docker-compose.yml — it is committed
+# Ignore override files with local secrets
+docker-compose.override.yml
+docker-compose.local.yml
+.dockerenv
+
+# ------------------------------------------------------------
+# IDEs & editors
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# PyCharm
+.idea/
+
+# Vim
+Session.vim
+.netrwhist
+
+# ------------------------------------------------------------
+# OS artefacts
+# ------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------
+# Misc
+# ------------------------------------------------------------
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.log
+
+# Compressed archives
+*.zip
+*.tar.gz
+*.tgz
+*.rar
